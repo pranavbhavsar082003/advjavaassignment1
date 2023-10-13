@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane prefHeight="666.0" prefWidth="950.0" stylesheets="@style.css" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.advjavaassignment1.TableViewController">
+    <children>
+      <VBox alignment="TOP_CENTER" layoutY="5.0" prefHeight="666.0" prefWidth="950.0" spacing="10.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+              <Button fx:id="viewChartButton" mnemonicParsing="false" onAction="#viewChart" style="-fx-background-color: yellow;" text="View Chart" />
+              <TableView fx:id="tableView" prefHeight="596.0" prefWidth="930.0">
+                  <columns>
+                      <TableColumn fx:id="yearColumn" prefWidth="150.0" text="Year" />
+                      <TableColumn fx:id="countryColumn" prefWidth="225.0" text="Country" />
+                      <TableColumn fx:id="numberOfLaunchesColumn" prefWidth="225.0" text="Number of Launches" />
+                  </columns>
+               <columnResizePolicy>
+                  <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+               </columnResizePolicy>
+              </TableView>
+         </children>
+         <padding>
+            <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+         </padding>
+      </VBox>
+    </children>
+</AnchorPane>
