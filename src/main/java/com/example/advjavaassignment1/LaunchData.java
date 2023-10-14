@@ -1,9 +1,5 @@
 package com.example.advjavaassignment1;
 
-import javafx.beans.property.IntegerProperty;
-import javafx.beans.property.SimpleIntegerProperty;
-import javafx.beans.property.SimpleStringProperty;
-import javafx.beans.property.StringProperty;
 
 public class LaunchData {
     private int year;
@@ -19,7 +15,10 @@ public class LaunchData {
     public int getYear() {
         return year;
     }
-
+/**
+ * @person pranav
+ * method to set year.
+ * */
     public void setYear(int year) {
         this.year = year;
     }
@@ -27,7 +26,10 @@ public class LaunchData {
     public String getCountry() {
         return country;
     }
-
+    /**
+     * @person pranav
+     * method to set country name.
+     * */
     public void setCountry(String country) {
         this.country = country;
     }
@@ -36,6 +38,10 @@ public class LaunchData {
         return launchCount;
     }
 
+    /**
+     * @person pranav
+     * method to set launch count.
+     * */
     public void setLaunchCount(int launchCount) {
         this.launchCount = launchCount;
     }

@@ -13,7 +13,6 @@ public class MainApp extends Application {
         Parent root = FXMLLoader.load(getClass().getResource("bar-view.fxml"));
         primaryStage.setTitle("Orbital Launches by Country");
 
-        // Correcting from "stage" to "primaryStage" here
         primaryStage.getIcons().add(new Image(MainApp.class.getResourceAsStream("Images/setelite.jpg")));
 
         primaryStage.setScene(new Scene(root));
